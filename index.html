@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Angelo // Red Team & Engenharia de Software</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal OO - Angelo Gabriel</title>
+    <link rel="stylesheet" href="css.css">
 </head>
-
 <body>
-<div id="root"></div>
-<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<script src="index.jsx"></script>
+
+<div id="terminal" onclick="document.getElementById('command-input').focus()">
+    <div id="output"><span class="success">Conectado ao repositório: AngeloGabrielAlbonetti/java</span>
+<span class="info">Foco: Estudo de Orientação a Objetos (POO)</span>
+Digite '<span class="file-link">list</span>' para escanear a pasta de exercícios ou '<span class="file-link">help</span>'.<br></div>
+    <div class="input-line">
+        <span class="prompt">angelo@poo-java:~$</span>
+        <input type="text" id="command-input" autofocus autocomplete="off">
+    </div>
+</div>
+
+<script src="js.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,54 @@
+       body {
+            background-color: #0f141c;
+            color: #00ff66;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+        }
+        #terminal {
+            max-width: 950px;
+            margin: auto;
+            background: #05080c;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #00ff66;
+            box-shadow: 0 0 20px rgba(0, 255, 102, 0.2);
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+        }
+        #output {
+            flex-grow: 1;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        .input-line {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #1a2333;
+            padding-top: 10px;
+        }
+        .prompt {
+            color: #ff00ff;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        #command-input {
+            background: transparent;
+            border: none;
+            color: #00ff66;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            outline: none;
+            flex-grow: 1;
+        }
+        .file-link { color: #ffff00; font-weight: bold; cursor: pointer; }
+        .file-link:hover { text-decoration: underline; }
+        .code-box { background: #151b24; color: #e1e4e8; padding: 15px; border-radius: 4px; margin-top: 8px; border-left: 4px solid #ff00ff; font-size: 0.9rem; overflow-x: auto; }
+        .success { color: #00ff66; }
+        .error { color: #ff3333; }
+        .info { color: #00bfff; }
