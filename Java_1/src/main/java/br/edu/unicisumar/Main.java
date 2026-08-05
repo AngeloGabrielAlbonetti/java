@@ -1,33 +1,48 @@
 package br.edu.unicisumar;
-
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("ovo");
-        Scanner Lei = new Scanner(System.in);
+        Scanner lei = new Scanner(System.in);
+        String t = "";
+        int v = 0;
+        do {
+            System.out.printf("digite de qual exercicios vc quer  5 e pra sair");
+             v = lei.nextInt();
+
+            switch (v){
+                case 1:
+                    main1 ex = new main1();
+                    ex.exe1();
+                    break;
+
+                case 2:
+                    main2 ex2 = new main2();
+                    ex2.exe2();
+                    break;
 
 
-        System.out.println("digite algo");
-        int Numero = Lei.nextInt();
+                case 3:
+                    main3 ex3 = new main3();
+                    ex3.exe3();
+                    break;
 
-        if (Numero > 0){
-            System.out.println("positivo");
-        } else if (Numero == 0) {
-            System.out.println("neutro");
-        } else{
-            System.out.println("negativo");
-        }
 
-        for (int i = 0; i < 10; i++) {
-            System.out.printf("\nIndex : %d", i);
-        }
+                case 4:
+                    main4 ex4 = new main4();
+                    ex4.exe4();
+                    break;
+            }
+            if (v != 5){
+                System.out.println("deseja continuar (s/n): ");
+                t = lei.next();
+            }
 
-        Lei.close();
+        }while (v != 5 && !t.equalsIgnoreCase("n"));
 
+        lei.close();
     }
-
 }
 
 
